@@ -12,6 +12,7 @@ func main() {
 	//	* float64
 	//	* string
 	//	* time
+	//  * nil == null
 	var card string = "there" // this statement is equal to card := "there"
 	card = "there"
 	hi := newString()
@@ -28,6 +29,9 @@ func main() {
 	decks := deck{"hi", "there"}
 	// call method assign to this type
 	decks.print()
+
+	// convert string to binary array
+	fmt.Println("bytes: ", []byte("Hi there"))
 }
 
 func newString() string {
